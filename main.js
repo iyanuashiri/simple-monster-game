@@ -23,17 +23,17 @@ new Vue({
             this.checkWinner()
         },
         attackButton: function () {
-            this.monsterLife = this.youLife - 5;
+            this.monsterLife = this.monsterLife - 5;
             this.messages.unshift('Monster has been hit by 5');
             this.monsterAttack()
         },
         specialAttackButton: function () {
-            this.monsterLife = this.youLife - 20;
+            this.monsterLife = this.monsterLife - 20;
             this.messages.unshift('Monster has been hit by 20');
             this.monsterAttack()
         },
         healButton: function () {
-            this.monsterLife = this.youLife - 10;
+            this.monsterLife = this.monsterLife + 10;
             this.messages.unshift('Player has recovered by 10');
             this.monsterAttack()
         },
