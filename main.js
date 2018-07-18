@@ -33,7 +33,7 @@ new Vue({
             this.monsterAttack()
         },
         healButton: function () {
-            this.monsterLife = this.monsterLife + 10;
+            this.youLife = this.youLife + 10;
             this.messages.unshift('Player has recovered by 10');
             this.monsterAttack()
         },
